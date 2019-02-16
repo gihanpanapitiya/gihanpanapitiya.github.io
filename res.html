@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gold Nanoparticles</title>
+<!-- <link rel="icon" href="images/icon3s.png"> -->
+
+
+<link rel="stylesheet" type="text/css" href="au144sr60.css">
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- <script src="js/myscripts.js"></script> -->
+
+</head>
+<body>
+
+<div id="header">
+
+<img src="images/logo3.png" class="himg">
+<img src="images/title.png" class="timg">
+<!-- <h1>Gold Nanoparticles</h1> -->
+<!-- <p>This is a paragraph.</p> -->
+
+<!-- <p>Click on the links inside the tabbed menu:</p> -->
+</div>
+<!-- header -->
+
+<ul class="tab">
+<!-- class="tab" -->
+ <!-- <li><a href="#" class="tablinks" onclick="openCity(event, 'Au18(SR)14')">Au<sub>18</sub>(SR)<sub>14</sub></a></li>
+ <li><a href="#" class="tablinks" onclick="openCity(event, 'Au20(SR)16')">Au<sub>20</sub>(SR)<sub>16</sub></a></li>
+ <li><a href="#" class="tablinks" onclick="openCity(event, 'Au23(SR)16')">Au<sub>23</sub>(SR)<sub>16</sub></a></li> -->
+
+
+ {% for item in site.data.navigation %}
+  <li> <a href="{{ item.link }}" class="tablinks" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+ {% endfor %}
+
+</ul>
+
+
+
+
+</body>
+</html>
+
+
+
+
+<!-- <nav>
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</nav> -->

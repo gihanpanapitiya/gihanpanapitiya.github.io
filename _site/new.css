@@ -1,0 +1,20 @@
+.left_pane {
+  float: left;
+  width: 50%;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.right_pane {
+  float: left;
+  width: 50%;
+  padding-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
